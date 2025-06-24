@@ -50,6 +50,7 @@
       background: rgba(0,0,0,0.8);
       justify-content: center;
       align-items: center;
+      z-index: 1000;
     }
     .popup-content {
       background: #111;
@@ -71,6 +72,12 @@
       color: white;
       font-weight: bold;
     }
+    .redirect-message {
+      display: none;
+      margin-top: 1rem;
+      color: #0f0;
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -89,7 +96,8 @@
 
   <div class="popup" onclick="this.style.display='none'">
     <div class="popup-content" onclick="event.stopPropagation()">
-      <form method="post" action="https://www.sendsteed.com/subscribe/" onsubmit="setTimeout(() => { window.location.href = 'https://www.myleadgensecret.com/sizzle/?rid=28382&src=seitemitmgx.dev'; }, 500);">
+      <form method="post" action="https://www.sendsteed.com/subscribe/"
+        onsubmit="document.getElementById('redirectMsg').style.display='block'; setTimeout(() => { window.location.href = 'https://artnabersl.github.io/myleadgensecret/'; }, 1500);">
         <input name="e110385" required type="text" placeholder="your@email.com">
         <input name="n110385" required type="text" placeholder="Name">
         <input type="hidden" name="lllid" value="110385">
@@ -97,6 +105,7 @@
         <input type="hidden" name="redirect" value="">
         <input type="hidden" name="source" value="">
         <button type="submit">Submit</button>
+        <div id="redirectMsg" class="redirect-message">Thanks! Redirecting…</div>
       </form>
     </div>
   </div>
