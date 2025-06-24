@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Secret Email System</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0b0b0b;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #ff2c2c;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #ccc;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+    .cta-button {
+      background-color: #ff2c2c;
+      border: none;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 2rem;
+    }
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .popup-content {
+      background: #111;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: left;
+      max-width: 400px;
+      width: 90%;
+    }
+    .popup-content input, .popup-content button {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 4px;
+    }
+    .popup-content button {
+      background-color: #ff2c2c;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>The Secret $100/Day Email System They Don’t Want You To See</h1>
+    <h2>Turn 5 Minutes a Day Into Recurring Commissions – With 100+ Leads Delivered to You Daily</h2>
+    <ul>
+      <li>✅ Get 100–200 real email leads every day</li>
+      <li>✅ Fully automated income system</li>
+      <li>✅ Proven by thousands of users</li>
+    </ul>
+    <button class="cta-button" onclick="document.querySelector('.popup').style.display='flex'">
+      Get Instant Access
+    </button>
+  </div>
+
+  <div class="popup" onclick="this.style.display='none'">
+    <div class="popup-content" onclick="event.stopPropagation()">
+      <form method="post" action="https://www.sendsteed.com/subscribe/" onsubmit="setTimeout(() => { window.location.href = 'https://www.myleadgensecret.com/sizzle/?rid=28382&src=seitemitmgx.dev'; }, 500);">
+        <input name="e110385" required type="text" placeholder="your@email.com">
+        <input name="n110385" required type="text" placeholder="Name">
+        <input type="hidden" name="lllid" value="110385">
+        <input type="hidden" name="lluid" value="sandyarta">
+        <input type="hidden" name="redirect" value="">
+        <input type="hidden" name="source" value="">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
